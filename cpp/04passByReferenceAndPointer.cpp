@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void incrementByReference(int& value);
+void incrementByReference(const int& value);
 
-void incrementbyPointer(int *value);
+void incrementbyPointer(const int *value);
 
 int main(){
 
@@ -24,7 +24,7 @@ int main(){
 	return 0;
 }
 
-void incrementByReference(int& value){
+void incrementByReference(const int& value){
 	value++;
 }
 

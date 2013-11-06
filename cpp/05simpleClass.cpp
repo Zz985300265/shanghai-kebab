@@ -13,7 +13,7 @@ public:
 	//Constructors
 	//empty constructor
 	simpleCPPClass(){}
-	simpleCPPClass(float iValue):value(iValue){
+	simpleCPPClass(const float& iValue):value(iValue){
 
 	}
 	//destructor
@@ -23,11 +23,11 @@ public:
 		cout<<value<<endl;
 	}
 
-	void addValue(float add){
+	void addValue(const float& add){
 		value = value + add;
 	}
 
-	void substractValue(float sub){
+	void substractValue(const float& sub){
 		value = value - sub;
 	}
 };
